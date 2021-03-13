@@ -4,9 +4,20 @@ block content
   h1= title
   h2 Por José Campo
   p Ejercicio de la semana 1: #{title}
-  p Vamos a buscar en tu ordenador los archivos con extensión .md 
-  <!-- button.btn-seleccionar(type='button' onclick="buscar()") Buscar
-  ul li= #{files}
+  p Función para mostrar el contenido de los ficheros con extensión .md 
+  .content 
+    p He encontrado #{ficheros.length} archivos,
+    ul  
+      each fichero in ficheros
+        
+        li=fichero
+
+    h3 Contenido de los ficheros .md 
+    p=contenido
+    
+
+
+
   
 
 
